@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+   
+}
+.menu{
+  display: none; 
+  width: 40px;
+  height: 40px;
+}
+.nav_right{
+    color: black;
+ 
+    display: flex;
+    gap: 20px;
+    align-items: center;
+ 
+}
+.nav_right a:hover{
+    background-color: yellow;
+    color: black;
+}
+.nav_right a{
+    color: black;
+    
+}
+.nav_left{
+    display: flex;
+    left: 50px;
+    gap: 50px;
+
+}
+
+.btn{
+   display: flex;
+   align-items: center;
+   background-color: red;
+   width: 256px;
+   height: 36px;
+   color: white;
+   border-radius: 20px;
+}
+nav{
+    align-items: center;
+    display: flex;
+    
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.head_img img{
+max-width: 1400px;
+    border-radius: 15px;
+}
+.head_img{
+    /* margin-top: 50px; */
+
+     margin: 50px auto;
+     display: flex;
+     justify-content: center;
+}
+h2{
+    color: black;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin-top: 75px;
+    margin-left: 50px;
+    font-size: 35px;
+}
+.main_card{
+ display: flex; 
+  justify-content: space-between; 
+}
+footer{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between  ;
+}
+ 
+@media (min-width: 200px) and (max-width: 978px) {
+    .head_img img{
+        max-width: 700px;
+        }
+        .main_card{
+            max-width:700px ;
+        }
+
+    .nav_right{
+        display: none;
+
+    }
+    .menu{
+        display: block;
+
+    }
+
+    .main_card {
+        
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .main_card{
+        display: flex;
+        justify-content: center;
+    }
+    .head_img img{
+        max-width: 800px;
+        }
+        .main_card{
+        
+        }
+}
+@media (max-width:680px) {
+
+    .head_img img{
+        max-width: 537px;
+    }
+    .main_card{
+        max-width: px;
+    }
+    .main_card{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 179px) {
+    .main_card{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
